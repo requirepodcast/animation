@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import Typing from 'react-typing-animation';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Typing>
+        {`const fs = require('fs') const path = require('path') if (process.argv[1] === 'init') { let filePath = path.join( process.cwd(), 'require', 'config.json ') fs.writeFileSync (filePath, JSON. parse({ podcast: 'require podcast', author: 'Adam Siekierski & Artur Dudek' })) } else { fetch('https://require.podcast.gq ').then (res => res.json()).then(json => { for (episode of json.episodes){  console.log (\`Name: \${episode.name}, Date:episode.date`}
+      </Typing>
     </div>
   );
 }
